@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Email";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+@if (User.IsInRole("Admin"))
+{
+    <p>Admin</p>
+}

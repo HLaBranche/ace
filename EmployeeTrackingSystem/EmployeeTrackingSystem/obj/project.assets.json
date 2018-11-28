@@ -12536,11 +12536,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fifz\\source\\repos\\EmployeeTrackingSystem\\EmployeeTrackingSystem\\EmployeeTrackingSystem.csproj",
+      "projectUniqueName": "C:\\Users\\fifz\\Desktop\\ace-ets\\EmployeeTrackingSystem\\EmployeeTrackingSystem\\EmployeeTrackingSystem.csproj",
       "projectName": "EmployeeTrackingSystem",
-      "projectPath": "C:\\Users\\fifz\\source\\repos\\EmployeeTrackingSystem\\EmployeeTrackingSystem\\EmployeeTrackingSystem.csproj",
+      "projectPath": "C:\\Users\\fifz\\Desktop\\ace-ets\\EmployeeTrackingSystem\\EmployeeTrackingSystem\\EmployeeTrackingSystem.csproj",
       "packagesPath": "C:\\Users\\fifz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fifz\\source\\repos\\EmployeeTrackingSystem\\EmployeeTrackingSystem\\obj\\",
+      "outputPath": "C:\\Users\\fifz\\Desktop\\ace-ets\\EmployeeTrackingSystem\\EmployeeTrackingSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -4,6 +4,6 @@ namespace EmployeeTrackingSystem.Data
 {
     public class ApplicationUser : IdentityUser
     {
-        public string FirstName { get; set; }
+
     }
 }

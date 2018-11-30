@@ -1,5 +1,67 @@
-﻿@{
+﻿@model EmployeeTrackingSystem.Models.EmailModel
+@{
     ViewData["Title"] = "Email";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ACE Email</title>
+
+</head>
+
+<body>
+    <table style="width:250%">
+        <tr>
+            <th><h2><img src="~/images/ace.jpg" alt="ACE" height="40" />@ViewData["Title"]</h2></th>
+    </table>
+    <div>
+        @using (Html.BeginForm("Email", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+
+            <center>
+
+                <hr />
+                <table>
+                    <tr>
+                        <td style="width: 80px">
+                            To:
+                        </td>
+                        <td>@Html.TextBoxFor(model => model.To)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Subject:
+                        </td>
+                        <td>@Html.TextBoxFor(model => model.Subject)</td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            Body:
+                        </td>
+                        <td>@Html.TextAreaFor(model => model.Body, new { rows = "15", cols = "50" })</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Send" />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <span style="color:green">@ViewBag.Message</span>
+            </center>
+        }
+    </div>
+    <div>
+        <center>
+            <p>Sent:</p>
+            <textarea id="viewEmails" readonly rows="15" cols="50" float="left"></textarea>
+        </center>
+
+
+    </div>
+
+</body>
+</html>

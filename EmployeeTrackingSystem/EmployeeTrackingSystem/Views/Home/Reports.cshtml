@@ -1,5 +1,64 @@
 ﻿@{
     ViewData["Title"] = "Reports";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
+<table style="width:250%">
+    <tr>
+        <th><h2><img src="~/images/ace.jpg" alt="ACE" height="40" />@ViewData["Title"]</h2></th>
+        <th><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></th>
+        <th>
+            <form class="example" action="action_page.php">
+                <input type="text" placeholder="search employee" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </th>
+</table>
+<br>
+
+<table id="MainHeader" style="width:100%">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Hire Date</th>
+        <th>Driver's Licenses</th>
+        <th>Medicare No</th>
+        <th>Certificate Date</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Expiration Date</th>
+    </tr>
+
+    <tr>
+        <td>Jane</td>
+        <td>Doe</td>
+        <td>##/##/####</td>
+        <td>##########</td>
+        <td>##########</td>
+        <td>##/##/####</td>
+        <td>##/##/####</td>
+        <td>##/##/####</td>
+        <td>##/##/####</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Smith</td>
+        <td>##/##/####</td>
+        <td>##########</td>
+        <td>##########</td>
+        <td>##/##/####</td>
+        <td>##/##/####</td>
+        <td>##/##/####</td>
+        <td>##/##/####</td>
+    </tr>
+
+    <tr>
+        <td>Carl</td>
+        <td>Andrews</td>
+        <td>##/##/####</td>
+        <td>##########</td>
+        <td>##########</td>
+        <td>##/##/####</td>
+        <td>##/##/####</td>
+        <td>##/##/####</td>
+        <td>##/##/####</td>
+    </tr>
+</table>

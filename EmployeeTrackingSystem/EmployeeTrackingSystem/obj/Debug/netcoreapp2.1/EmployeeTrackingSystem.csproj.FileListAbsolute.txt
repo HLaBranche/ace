@@ -80,7 +80,6 @@ C:\Users\fifz\Desktop\ace-ets\EmployeeTrackingSystem\EmployeeTrackingSystem\obj\
 C:\Users\fifz\Desktop\ace-ets\EmployeeTrackingSystem\EmployeeTrackingSystem\obj\Debug\netcoreapp2.1\EmployeeTrackingSystem.csproj.CoreCompileInputs.cache
 C:\Users\fifz\Desktop\ace-ets\EmployeeTrackingSystem\EmployeeTrackingSystem\obj\Debug\netcoreapp2.1\EmployeeTrackingSystem.RazorAssemblyInfo.cache
 C:\Users\fifz\Desktop\ace-ets\EmployeeTrackingSystem\EmployeeTrackingSystem\obj\Debug\netcoreapp2.1\EmployeeTrackingSystem.RazorAssemblyInfo.cs
-C:\Users\fifz\Desktop\ace-ets\EmployeeTrackingSystem\EmployeeTrackingSystem\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\fifz\Desktop\ace-ets\EmployeeTrackingSystem\EmployeeTrackingSystem\obj\Debug\netcoreapp2.1\EmployeeTrackingSystem.AssemblyInfoInputs.cache
 C:\Users\fifz\Desktop\ace-ets\EmployeeTrackingSystem\EmployeeTrackingSystem\obj\Debug\netcoreapp2.1\EmployeeTrackingSystem.AssemblyInfo.cs
 C:\Users\fifz\Desktop\ace-ets\EmployeeTrackingSystem\EmployeeTrackingSystem\obj\Debug\netcoreapp2.1\EmployeeTrackingSystem.TagHelpers.input.cache
@@ -139,3 +138,4 @@ C:\Users\fifz\Desktop\ace-ets\EmployeeTrackingSystem\EmployeeTrackingSystem\obj\
 C:\Users\fifz\Desktop\ace-ets\EmployeeTrackingSystem\EmployeeTrackingSystem\obj\Debug\netcoreapp2.1\EmployeeTrackingSystem.pdb
 C:\Users\fifz\Desktop\ace-ets\EmployeeTrackingSystem\EmployeeTrackingSystem\obj\Debug\netcoreapp2.1\EmployeeTrackingSystem.csproj.CopyComplete
 C:\Users\fifz\Desktop\ace-ets\EmployeeTrackingSystem\EmployeeTrackingSystem\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Index.g.cshtml.cs
+C:\Users\fifz\Desktop\ace-ets\EmployeeTrackingSystem\EmployeeTrackingSystem\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

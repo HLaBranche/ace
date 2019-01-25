@@ -8036,7 +8036,7 @@
       ]
     },
     "Sendgrid/9.10.0": {
-      "sha512": "G8CYo0oPP/on1D3QNfU27GMLCEUIii8/nGTLGnbmrddrRaRShdxpCHWZhxr02cwZDwAsx0WBCi+IjbJ+DpQo0A==",
+      "sha512": "i6208SyPFvZ5bJRUbOimhBF/axjhiS4xQX71+KWPhzWUJGHbGX+yfwPrUg5y0D3deQlQz94mHeWF6AGHSZ81jQ==",
       "type": "package",
       "path": "sendgrid/9.10.0",
       "files": [
@@ -12587,23 +12587,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fifz\\.nuget\\packages\\": {},
-    "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Chris\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fifz\\Desktop\\ace-ets\\EmployeeTrackingSystem\\EmployeeTrackingSystem\\EmployeeTrackingSystem.csproj",
+      "projectUniqueName": "D:\\Desktop\\ace\\EmployeeTrackingSystem\\EmployeeTrackingSystem\\EmployeeTrackingSystem.csproj",
       "projectName": "EmployeeTrackingSystem",
-      "projectPath": "C:\\Users\\fifz\\Desktop\\ace-ets\\EmployeeTrackingSystem\\EmployeeTrackingSystem\\EmployeeTrackingSystem.csproj",
-      "packagesPath": "C:\\Users\\fifz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fifz\\Desktop\\ace-ets\\EmployeeTrackingSystem\\EmployeeTrackingSystem\\obj\\",
+      "projectPath": "D:\\Desktop\\ace\\EmployeeTrackingSystem\\EmployeeTrackingSystem\\EmployeeTrackingSystem.csproj",
+      "packagesPath": "C:\\Users\\Chris\\.nuget\\packages\\",
+      "outputPath": "D:\\Desktop\\ace\\EmployeeTrackingSystem\\EmployeeTrackingSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\fifz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

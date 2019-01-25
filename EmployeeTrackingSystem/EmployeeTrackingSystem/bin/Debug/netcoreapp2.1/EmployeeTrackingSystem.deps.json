@@ -3633,7 +3633,7 @@
     "Sendgrid/9.10.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-G8CYo0oPP/on1D3QNfU27GMLCEUIii8/nGTLGnbmrddrRaRShdxpCHWZhxr02cwZDwAsx0WBCi+IjbJ+DpQo0A==",
+      "sha512": "sha512-i6208SyPFvZ5bJRUbOimhBF/axjhiS4xQX71+KWPhzWUJGHbGX+yfwPrUg5y0D3deQlQz94mHeWF6AGHSZ81jQ==",
       "path": "sendgrid/9.10.0",
       "hashPath": "sendgrid.9.10.0.nupkg.sha512"
     },

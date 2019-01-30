@@ -66,7 +66,7 @@ using EmployeeTrackingSystem.Models;
             WriteLiteral("<table style=\"width:250%\">\r\n    <tr>\r\n        <th><h2>");
             EndContext();
             BeginContext(97, 56, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f91dae6534c2450c8a271153c515f767", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f8ae32021d41463fbc9d2cb4ce113a82", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -93,7 +93,7 @@ using EmployeeTrackingSystem.Models;
             WriteLiteral("</h2></th>\r\n        <th><link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\"></th>\r\n        <th>\r\n            ");
             EndContext();
             BeginContext(341, 226, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8bc38da91fe44dd1953a0806bfdae18d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "400260eec87341fbafe5bb24e03f15d5", async() => {
                 BeginContext(388, 172, true);
                 WriteLiteral("\r\n                <input type=\"text\" placeholder=\"search employee\" name=\"search\">\r\n                <button type=\"submit\"><i class=\"fa fa-search\"></i></button>\r\n            ");
                 EndContext();

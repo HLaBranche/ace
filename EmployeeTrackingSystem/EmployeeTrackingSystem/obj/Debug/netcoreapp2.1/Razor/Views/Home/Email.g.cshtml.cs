@@ -62,7 +62,7 @@ using EmployeeTrackingSystem.Models;
             WriteLiteral("\r\n<table style=\"width:250%\">\r\n    <tr>\r\n        <th><h2>");
             EndContext();
             BeginContext(142, 56, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "cbf8e27f286e499788ad3f95135b866f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d9a41af3408d4bce8a02fbbae963c57b", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

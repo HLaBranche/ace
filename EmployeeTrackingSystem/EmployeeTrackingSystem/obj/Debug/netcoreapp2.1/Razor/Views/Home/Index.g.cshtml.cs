@@ -60,7 +60,7 @@ using EmployeeTrackingSystem.Models;
 #line default
 #line hidden
             BeginContext(51, 520, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ba843b89da02409c9a069bf64ad132b7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d913e371a95443e1a621777854457f0e", async() => {
                 BeginContext(57, 507, true);
                 WriteLiteral(@"
     <style>
@@ -107,7 +107,7 @@ using EmployeeTrackingSystem.Models;
             WriteLiteral("\r\n\r\n\r\n<h2>");
             EndContext();
             BeginContext(581, 56, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "fc7c5cb835bd411aad6f1529cd2c5b50", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7fbd67453dfb4763be50cf66ee9f427c", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

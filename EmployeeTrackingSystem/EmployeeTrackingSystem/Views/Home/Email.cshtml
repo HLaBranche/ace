@@ -3,9 +3,10 @@
     ViewBag.Title = "Email";
 }
 
-<table style="width:250%">
+<table>
     <tr>
         <th><h2><img src="~/images/ACElogo.jpg" alt="ACE" height="40" />@ViewData["Title"]</h2></th>
+    </tr>
 </table>
 @using (Html.BeginForm("Send", "Email", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {

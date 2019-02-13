@@ -9,7 +9,10 @@
             @if (User.IsInRole("Admin"))
             {
                 <li>
-                        <a asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
+                    <a asp-area="" asp-controller="Admin" asp-action="Index">Manage Users</a>
+                </li>
+                <li>
+                    <a asp-area="Identity" asp-page="/Account/Register">Create User</a>
                 </li>
             }
             <li>
@@ -24,7 +27,6 @@
 else
 {
     <ul class="nav navbar-nav navbar-right">
-        <li><a asp-area="Identity" asp-page="/Account/Register">Register</a></li>
         <li><a asp-area="Identity" asp-page="/Account/Login">Login</a></li>
     </ul>
 }

@@ -10,10 +10,13 @@
             @if (User.IsInRole("Admin"))
             {
                 <li>
-                        <a asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
+                    <a asp-area="" asp-controller="Admin" asp-action="Index">Manage Users</a>
+                </li>
+                <li>
+                    <a asp-area="Identity" asp-page="/Account/Register">Create User</a>
                 </li>
             }
-            
+
             <li>
                 <a asp-area="Identity" asp-page="/Account/Manage/ChangePassword" title="Manage">Hello @UserManager.GetUserName(User)!</a>
             </li>

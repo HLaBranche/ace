@@ -4,6 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using EmployeeTrackingSystem.Models;
 
 namespace EmployeeTrackingSystem.Data
 {
@@ -13,5 +14,6 @@ namespace EmployeeTrackingSystem.Data
             : base(options)
         {
         }
+        public DbSet<EmployeeTrackingSystem.Models.Employee> Employee { get; set; }
     }
 }

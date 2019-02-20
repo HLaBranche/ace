@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmployeeTrackingSystem.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190219040315_Employee")]
+    [Migration("20190220024317_Employee")]
     partial class Employee
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,12 +23,26 @@ namespace EmployeeTrackingSystem.Data.Migrations
 
             modelBuilder.Entity("EmployeeTrackingSystem.Models.Employee", b =>
                 {
-                    b.Property<string>("Email")
+                    b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Address");
 
+                    b.Property<DateTime>("CertificationEndDate");
+
+                    b.Property<DateTime>("CertificationStartDate");
+
+                    b.Property<string>("CertificationType");
+
+                    b.Property<string>("City");
+
                     b.Property<DateTime>("DateOfBirth");
+
+                    b.Property<string>("Email");
+
+                    b.Property<DateTime>("HireDate");
+
+                    b.Property<int>("LicenseNumber");
 
                     b.Property<string>("Name");
 
@@ -38,7 +52,7 @@ namespace EmployeeTrackingSystem.Data.Migrations
 
                     b.Property<int>("Zip");
 
-                    b.HasKey("Email");
+                    b.HasKey("Id");
 
                     b.ToTable("Employee");
                 });

@@ -36,7 +36,7 @@ namespace EmployeeTrackingSystem.Controllers
             }
 
             var employee = await _context.Employee
-                .FirstOrDefaultAsync(m => m.Email == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (employee == null)
             {
                 return NotFound();
@@ -46,6 +46,7 @@ namespace EmployeeTrackingSystem.Controllers
         }
 
         // GET: Employees/Create
+        [Authorize(Roles = "Admin, Manager")]
         public IActionResult Create()
         {
             return View();
@@ -56,7 +57,7 @@ namespace EmployeeTrackingSystem.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Name,Email,Address,State,Zip,Phone,DateOfBirth")] Employee employee)
+        public async Task<IActionResult> Create([Bind("Id,Name,Email,Address,City,State,Zip,Phone,DateOfBirth,HireDate,LicenseNumber,CertificationType,CertificationStartDate,CertificationEndDate")] Employee employee)
         {
             if (ModelState.IsValid)
             {
@@ -68,6 +69,7 @@ namespace EmployeeTrackingSystem.Controllers
         }
 
         // GET: Employees/Edit/5
+        [Authorize(Roles = "Admin, Manager")]
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -88,9 +90,9 @@ namespace EmployeeTrackingSystem.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("Name,Email,Address,State,Zip,Phone,DateOfBirth")] Employee employee)
+        public async Task<IActionResult> Edit(string id, [Bind("Id,Name,Email,Address,City,State,Zip,Phone,DateOfBirth,HireDate,LicenseNumber,CertificationType,CertificationStartDate,CertificationEndDate")] Employee employee)
         {
-            if (id != employee.Email)
+            if (id != employee.Id)
             {
                 return NotFound();
             }
@@ -104,7 +106,7 @@ namespace EmployeeTrackingSystem.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!EmployeeExists(employee.Email))
+                    if (!EmployeeExists(employee.Id))
                     {
                         return NotFound();
                     }
@@ -119,6 +121,7 @@ namespace EmployeeTrackingSystem.Controllers
         }
 
         // GET: Employees/Delete/5
+        [Authorize(Roles = "Admin, Manager")]
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
@@ -127,7 +130,7 @@ namespace EmployeeTrackingSystem.Controllers
             }
 
             var employee = await _context.Employee
-                .FirstOrDefaultAsync(m => m.Email == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (employee == null)
             {
                 return NotFound();
@@ -149,7 +152,7 @@ namespace EmployeeTrackingSystem.Controllers
 
         private bool EmployeeExists(string id)
         {
-            return _context.Employee.Any(e => e.Email == id);
+            return _context.Employee.Any(e => e.Id == id);
         }
     }
 }

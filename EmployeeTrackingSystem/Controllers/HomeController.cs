@@ -25,7 +25,8 @@ namespace EmployeeTrackingSystem.Controllers
 
             return View();
         }
-
+        
+        [Authorize(Roles = "Admin, Manager")]
         public IActionResult Email()
         {
             ViewData["Message"] = "The Email page";

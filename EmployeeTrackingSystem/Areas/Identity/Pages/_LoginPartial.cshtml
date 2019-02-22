@@ -16,17 +16,11 @@
                 </li>
             }
             <li>
-                <a asp-area="Identity" asp-page="/Account/Manage/ChangePassword" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+                <a asp-area="Identity" asp-page="/Account/Manage/ChangePassword" title="Manage">Change Password</a>
             </li>
             <li>
                 <button type="submit" class="btn btn-link navbar-btn navbar-link">Logout</button>
             </li>
         </ul>
     </form>
-}
-else
-{
-    <ul class="nav navbar-nav navbar-right">
-        <li><a asp-area="Identity" asp-page="/Account/Login">Login</a></li>
-    </ul>
 }

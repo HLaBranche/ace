@@ -17,30 +17,33 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+    @if (User.IsInRole("Admin") || User.IsInRole("Manager") || User.IsInRole("User"))
+    {
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a asp-area="" asp-controller="Employees" asp-action="Index">Employee Portal</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Reports">Reports</a></li>
+                        @if (User.IsInRole("Admin") || User.IsInRole("Manager"))
+                        {
+                            <li><a asp-area="" asp-controller="Home" asp-action="Email">Email</a></li>
+                        }
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Employees" asp-action="Index">Employee Portal</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Reports">Reports</a></li>
-                    @if (User.IsInRole("Admin") || User.IsInRole("Manager"))
-                    {
-                        <li><a asp-area="" asp-controller="Home" asp-action="Email">Email</a></li>
-                    }
-                </ul>
-                <partial name="_LoginPartial" />
-            </div>
-        </div>
-    </nav>
+        </nav>
+    }
 
     <partial name="_CookieConsentPartial" />
 

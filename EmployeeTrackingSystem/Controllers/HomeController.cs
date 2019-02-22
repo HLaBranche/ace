@@ -7,25 +7,35 @@ using Microsoft.AspNetCore.Mvc;
 using EmployeeTrackingSystem.Models;
 using Microsoft.AspNetCore.Authorization;
 using System.Net.Mail;
+using EmployeeTrackingSystem.Data;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace EmployeeTrackingSystem.Controllers
 {
     [Authorize]
     public class HomeController : Controller
     {
+        private readonly ApplicationDbContext _context;
+
+        public HomeController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
             ViewData["Message"] = "The Employee Portal";
             return View();
         }
 
-        public IActionResult Reports()
+        public async Task<IActionResult> Reports()
         {
             ViewData["Message"] = "The Reports page";
 
-            return View();
+            return View(await _context.Employee.ToListAsync());
         }
-        
+
         [Authorize(Roles = "Admin, Manager")]
         public IActionResult Email()
         {

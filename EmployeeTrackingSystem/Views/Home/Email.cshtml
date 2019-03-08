@@ -7,7 +7,7 @@
     <tr>
         <th><h2><img src="~/images/ACElogo.jpg" alt="ACE" height="40" />@ViewData["Title"]</h2></th>
     </tr>
-</table>
+</table> @*
 @using (Html.BeginForm("Send", "Email", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
     @Html.AntiForgeryToken()
@@ -63,5 +63,51 @@
     <div class="form-group">
         @Html.LabelFor(m => m.Sent, new { @class = "col-md-2 control-label" })
         <textarea id="viewEmails" readonly rows="10" cols="30" float="left"></textarea>
-    </div>
+    </div> *@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>Email Status</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>
+                Eric Williams
+            </td>
+            <td>ewilliams@ace.com</td>
+            <td> expiration notification sent</td>
+        </tr>
+        <tr>
+            <td>
+                Brenda Car
+            </td>
+            <td>bcar@ace.com</td>
+            <td>7 day notification sent</td>
+        </tr>
+        <tr>
+            <td>
+                Jeremy Smith
+            </td>
+            <td>jsmith@ace.com</td>
+            <td>14 day notification sent</td>
+        </tr>
+        <tr>
+            <td>
+                John Clark
+            </td>
+            <td>jclark@ace.com</td>
+            <td>30 day notification sent</td>
+        </tr>
+    </tbody>
+</table>
+
 }
